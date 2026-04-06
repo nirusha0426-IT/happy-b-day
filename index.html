@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Birthday Newspaper</title>
+
+<style>
+/* FULL WHITE PAGE */
+body {
+    margin: 0;
+    background: white;
+    font-family: "Times New Roman", serif;
+}
+
+/* FULL PAGE LAYOUT */
+.paper {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* LEFT IMAGE FULL HEIGHT */
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+/* RIGHT SIDE */
+.right {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+
+/* DATE LINE */
+.subhead {
+    text-align: center;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* SUBTITLE */
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* MAIN TEXT */
+.content {
+    flex: 1;
+    column-count: 2;
+    column-gap: 30px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* QUOTE */
+.quote {
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+/* BUTTON */
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.explore-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background: #444;
+    transform: scale(1.05);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .paper {
+        grid-template-columns: 1fr;
+    }
+
+    .left {
+        height: 300px;
+    }
+
+    .content {
+        column-count: 1;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="paper">
+
+    <!-- LEFT IMAGE -->
+    <div class="left">
+        <!-- ✅ FIXED IMAGE PATH -->
+        <img src="C:\Users\NIRUSHA\OneDrive\Desktop\bday\images\front.jpeg">
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+
+        <div class="header">
+            <h1>THE BIRTHDAY POST</h1>
+        </div>
+
+        <div class="subhead">
+            April 7th • Special Edition
+        </div>
+
+        <div class="title">
+            SHE TURNS 22 🎉
+        </div>
+
+        <div class="subtitle">
+            A year with more wiser - bolder - lovable ver of you 
+        </div>
+
+        <div class="content">
+            Today marks a very special occasion as we celebrate the birthday of someone truly amazing.
+            Another year has passed, filled with laughter, memories, and countless beautiful moments.
+
+            From unforgettable adventures to late-night talks, every moment spent has been nothing
+            short of magical. This day is not just about growing older, but about celebrating the
+            wonderful person you are becoming.
+
+            Hoping this year bring you happiness, success, and everything your heart desires. Keep shining,
+            keep smiling, and never stop being the incredible person everyone loves.
+
+            Cheers to more memories, more laughter, and more unforgettable moments ahead!
+
+            Life is a journey, and every year adds another beautiful chapter. Today, we celebrate not
+            just your birthday, but the joy and positivity you bring into everyone's life.
+        </div>
+
+        <div class="quote">
+            “A year of smiles, treats & hahahah hehehehe !”
+        </div>
+
+        <!-- ✅ EXPLORE BUTTON -->
+        <div class="btn-container">
+            <a href="pg2.html">
+                <button class="explore-btn">Explore ➜</button>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
